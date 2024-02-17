@@ -9,24 +9,48 @@
 
 /* ---------- Feature ---------- */
 
-
 /* ---------- Service ---------- */
+.service__main .service__icon>span {
+    color: var(--primary-color);
+    background: var(--bg-color-li);
+    font-size: 30px;
+    width: 70px;
+    height: 70px;
+    line-height: 70px;
+}
 
+.service__main .service__content a {
+    margin-bottom: 15px;
+}
+
+.service__main .service__content h3 {
+    font-size: 24px;
+    line-height: 34px;
+    font-weight: 600;
+    color: var(--heading-color);
+}
+
+.service__main .service__content a:hover h3 {
+    color: var(--secondary-color);
+}
 
 /* ---------- Cover Service ---------- */
 .cover_inner {
-    background:url(../images/bg3.jpg) no-repeat bottom / cover;
+    background: url(../images/bg3.jpg) no-repeat bottom / cover;
 }
+
 .cover_service .cover_feature {
     background: var(--bg-color);
     padding: 30px;
     border-radius: 10px;
 }
+
 .cover_service .icon {
     margin-right: 1rem;
 }
+
 .cover_service .icon i {
-    color: var( --primary-color);
+    color: var(--primary-color);
     font-size: 1.7rem;
     background: rgb(13 54 159 / 9%);
     height: 70px;
@@ -35,6 +59,7 @@
     text-align: center;
     border-radius: 50%;
 }
+
 .cover_service .icon_info h5 {
     font-size: 1.4rem;
     line-height: 2.8rem;
@@ -42,6 +67,7 @@
     font-weight: 600;
     margin-bottom: 0.5rem;
 }
+
 .cover_service .icon_info p {
     font-size: 1.2rem;
 }
