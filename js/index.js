@@ -15,3 +15,13 @@ function scrollFunction() {
     document.body.scrollTop = 0; 
     document.documentElement.scrollTop = 0; 
   }
+
+
+/* ---------- Right Side Bar ---------- */
+document.getElementById("toggle_right_sidebar").onclick = function() {
+  var hideSideBar = document.getElementById("right_sidebar");
+  hideSideBar.classList.toggle("hide_sidebar");
+  
+  var toggleClass = document.getElementById("toggle_class");
+  toggleClass.classList.toggle("fa-angle-double-left")
+}
