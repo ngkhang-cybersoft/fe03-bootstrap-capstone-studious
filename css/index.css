@@ -163,6 +163,87 @@ header .header__darkmode {
 
 
 /* ---------- Feature ---------- */
+.feature {
+    margin-top: -4em;
+}
+
+.feature__item .feature__wrapper {
+    padding: 50px 35px;
+    border-radius: 8px;
+}
+
+@media (max-width: 415px) {
+    .feature__item .feature__wrapper {
+        padding: 40px 30px;
+    }
+}
+
+.feature .feature__wrapper.color-1 {
+    background-color: #037ef3;
+}
+
+.feature .feature__wrapper.color-2 {
+    background-color: #ffc949;
+}
+
+.feature .feature__wrapper.color-3 {
+    background-color: #ff4f81;
+}
+
+.feature .feature__wrapper.color-4 {
+    background-color: #1ee697;
+}
+
+.feature__item i {
+    font-size: 45px;
+    color: #fff;
+}
+
+.feature__item h4 {
+    color: var(--heading-color);
+}
+
+@media (max-width: 1200px) {
+    h4 {
+        font-size: calc(1.275rem + 0.3vw);
+    }
+}
+
+.feature__item a {
+    color: #fff;
+    font-weight: 600;
+}
+
+.feature__item a:hover {
+    color: #000;
+}
+
+@media (max-width: 1199px) {
+    .feature__wrapper h4 a {
+        margin-top: 20px;
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 992px) {
+    .feature__wrapper h4 a {
+        font-size: 25px;
+    }
+}
+
+@media (max-width: 430px) {
+    .feature__wrapper h4 a {
+        font-size: 23px;
+    }
+}
+
+@media (max-width: 415px) {
+    .feature__wrapper h4 a {
+        font-size: 19px;
+        margin-bottom: 10px;
+        margin-top: 15px;
+    }
+}
 
 /* ---------- Service ---------- */
 .service__main .service__icon>span {
