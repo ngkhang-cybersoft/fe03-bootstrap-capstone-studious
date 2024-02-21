@@ -35,13 +35,17 @@
       crossorigin="anonymous"
     />
 
+    <!-- Owl Carousel -->
+    <link rel="stylesheet" href="./css/owlcarousel/owl.carousel.min.css" />
+    <link rel="stylesheet" href="./css/owlcarousel/owl.theme.default.min.css" />
+
     <!-- ---------- Main CSS ---------- -->
     <link rel="stylesheet" href="./css/common.css" />
     <link rel="stylesheet" href="./css/index.css" />
   </head>
   <body>
     <!-- ---------- Top header ---------- -->
-    <section class="top__header">
+    <section id="top-header" class="top__header">
       <div
         class="container-fluid d-flex justify-content-between align-content-center"
       >
@@ -97,11 +101,14 @@
       </div>
     </section>
     <!-- ---------- Header ---------- -->
-    <header class="">
+    <header id="header" class="d-flex align-items-center p-0 sticky-top">
       <div class="container-fluid">
         <nav class="navbar navbar-expand-lg">
           <!-- Header: Brand -->
-          <a class="navbar-brand m-0 p-0 d-flex align-items-center" href="#">
+          <a
+            class="navbar-brand m-0 p-0 d-flex align-items-center text-capitalize"
+            href="#"
+          >
             <figure class="mb-0 mr-1">
               <img src="./images/logo.png" alt="studious brand" />
             </figure>
@@ -203,7 +210,44 @@
       </div>
     </header>
     <!-- ---------- Banner Slide ---------- -->
-
+    <section class="banner">
+      <div class="banner__list owl-carousel owl-theme">
+        <div
+          class="banner__item bg-1 position-relative d-flex align-items-center"
+        >
+          <div class="banner__info w-100">
+            <div class="container">
+              <div>
+                <h5 class="mb-sm-5 mb-4">
+                  Master the Skills to Drive your Career
+                </h5>
+                <a href="#" class="btn">
+                  Know More
+                  <i class="fa fa-arrow-right ml-2"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          class="banner__item bg-2 position-relative d-flex align-items-center"
+        >
+          <div class="banner__info w-100">
+            <div class="container">
+              <div>
+                <h5 class="mb-sm-5 mb-4">
+                  Studious is the best choice for everyone
+                </h5>
+                <a href="#" class="btn">
+                  Know More
+                  <i class="fa fa-arrow-right ml-2"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
     <!-- ---------- Feature ---------- -->
     <section class="feature position-relative">
       <div class="container">
@@ -863,6 +907,9 @@
       crossorigin="anonymous"
     ></script>
 
+    <!-- ---------- Owlcarousel ---------- -->
+    <script src="./js/OwlCarousel/owl.carousel.min.js"></script>
+
     <!-- ---------- Count Up ---------- -->
     <script
       src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.js"
@@ -871,11 +918,6 @@
       referrerpolicy="no-referrer"
     ></script>
     <script src="./js/CountUp/jquery.countup.js"></script>
-    <script>
-      $(".counter").countUp({
-        time: 3000,
-      });
-    </script>
 
     <!-- ---------- Main JS ---------- -->
     <script src="./js/index.js"></script>
