@@ -54,7 +54,7 @@ header.nav-fixed {
     height: 70px;
 }
 
-header nav {
+header .navbar {
     padding: 1.2rem 1rem;
 }
 
@@ -167,15 +167,17 @@ header .header__form button {
     }
 }
 
-header .header__darkmode i {
-    font-size: 15px;
-}
-
-header .header__darkmode {
+header .header__darkmode button {
+    background: none;
+    cursor: pointer;
     width: 24px;
     height: 24px;
-    padding: 0px 0;
+    margin-left: 10px;
     color: var(--primary-color);
+}
+
+header .header__darkmode button:hover {
+    color: var(--secondary-color);
 }
 
 /* ---------- Banner Slide ---------- */

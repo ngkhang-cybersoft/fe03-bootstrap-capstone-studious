@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
   <head>
     <title>
       Studious - WordPress Theme - Just another W3Layouts free WordPress Demo
@@ -196,15 +196,15 @@
 
           <!-- Header: Button Dark mode -->
           <div class="header__darkmode">
-            <div class="d-flex align-items-center">
-              <input hidden type="text" />
-              <div class="darkMode__icon">
-                <!-- <i class="gg-sun d-none"></i> -->
-                <!-- <i class="gg-moon"></i> -->
-                <i class="fa-regular fa-sun d-none"></i>
-                <i class="fa-regular fa-moon"></i>
+            <nav class="navigation">
+              <div
+                class="theme-switch-wrapper d-flex align-items-center justify-content-center"
+              >
+                <button class="border-0 p-0" onclick="switchTheme()">
+                  <i id="iconDarkmode"></i>
+                </button>
               </div>
-            </div>
+            </nav>
           </div>
         </nav>
       </div>
@@ -909,6 +909,20 @@
 
     <!-- ---------- Owlcarousel ---------- -->
     <script src="./js/OwlCarousel/owl.carousel.min.js"></script>
+
+    <!-- ---------- CSS.gg ---------- -->
+    <!-- <link
+      href="https://cdn.jsdelivr.net/npm/css.gg/icons/icons.css"
+      rel="stylesheet"
+    /> -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/css.gg/icons/css/sun.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/css.gg/icons/css/moon.css"
+      rel="stylesheet"
+    />
 
     <!-- ---------- Count Up ---------- -->
     <script

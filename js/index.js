@@ -1,3 +1,64 @@
+/* ---------- Initial ---------- */
+const THEME_INITIAL = {
+  "Light": {
+    "Data-theme": "light",
+    "Icon": "gg-moon",
+  },
+  "Dark": {
+    "Data-theme": "dark",
+    "Icon": "gg-sun",
+  },
+}
+
+function defineInitial() {
+  const iconDarkmodeID = document.getElementById('iconDarkmode');
+
+  let defaultTheme = THEME_INITIAL.Light;
+
+  localStorage.setItem('theme', JSON.stringify(defaultTheme));
+  iconDarkmodeID.classList.add(defaultTheme.Icon);
+  document.documentElement.setAttribute('data-theme', defaultTheme['Data-theme']);
+}
+defineInitial();
+
+/* ---------- Switch theme dark mode ---------- */
+function switchTheme() {
+  let prevTheme = JSON.parse(localStorage.getItem('theme'));
+  const iconDarkmodeID = document.getElementById('iconDarkmode');
+
+  let newTheme = THEME_INITIAL[`${prevTheme['Data-theme'] === 'light'
+    ? 'Dark'
+    : 'Light'}`
+  ];
+
+  localStorage.setItem('theme', JSON.stringify(newTheme));
+  document.documentElement.setAttribute('data-theme', newTheme['Data-theme']);
+
+  iconDarkmodeID.classList.remove(prevTheme.Icon);
+  iconDarkmodeID.classList.add(newTheme.Icon);
+}
+
+/* ---------- Handle header when scroll ---------- */
+window.addEventListener('scroll', () => {
+  let topHeaderId = document.getElementById("top-header");
+  let headerId = document.getElementById("header");
+  const OFFSET = topHeaderId.getBoundingClientRect().height;
+
+  let windowPositionY = window.scrollY || document.documentElement.scrollTop;
+
+  (windowPositionY > OFFSET)
+    ? headerId.classList.add('nav-fixed')
+    : headerId.classList.remove('nav-fixed');
+})
+
+/* ---------- Owl-Carousel ---------- */
+$(".owl-carousel").owlCarousel({
+  items: 1,
+  loop: true,
+  autoplay: true,
+  autoplaySpeed: 1000,
+});
+
 /* ---------- Back to top ---------- */
 let mybutton = document.getElementById("myBtn");
 
@@ -16,18 +77,10 @@ function topFunction() {
   document.documentElement.scrollTop = 0;
 }
 
-// Handle header when scroll
-window.addEventListener('scroll', () => {
-  let topHeaderId = document.getElementById("top-header");
-  let headerId = document.getElementById("header");
-  const OFFSET = topHeaderId.getBoundingClientRect().height;
-
-  let windowTop = window.scrollY || document.documentElement.scrollTop;
-
-  (windowTop > OFFSET)
-    ? headerId.classList.add('nav-fixed')
-    : headerId.classList.remove('nav-fixed');
-})
+/* ---------- Counter-Up ---------- */
+$(".counter").countUp({
+  "time": 3000,
+});
 
 /* ---------- Right Side Bar ---------- */
 document.getElementById("toggle_right_sidebar").onclick = function () {
@@ -37,16 +90,3 @@ document.getElementById("toggle_right_sidebar").onclick = function () {
   var toggleClass = document.getElementById("toggle_class");
   toggleClass.classList.toggle("fa-angle-double-left")
 }
-
-/* ---------- Counter-Up ---------- */
-$(".counter").countUp({
-  "time": 3000,
-});
-
-/* ---------- Owl-Carousel ---------- */
-$(".owl-carousel").owlCarousel({
-  items: 1,
-  loop: true,
-  autoplay: true,
-  autoplaySpeed: 1000,
-});
