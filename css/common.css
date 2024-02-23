@@ -68,6 +68,10 @@ body a {
   transition: 0.5s all;
 }
 
+body li {
+  list-style: none;
+}
+
 body a:hover {
   text-decoration: none;
 }
@@ -78,6 +82,7 @@ p {
   line-height: 28px;
   color: var(--font-color);
   letter-spacing: .4px;
+  margin-bottom: 0;
 }
 
 /* Title */
@@ -87,14 +92,30 @@ p {
 
 .title-main h3,
 .title-main span {
-  font-size: 35px;
-  line-height: 45px;
+  font-size: 40px;
+  line-height: 50px;
   font-weight: 600;
 }
 
 .title-main h3 {
   color: var(--heading-color);
   position: relative;
+}
+
+@media (max-width: 480px) {
+  .title-main h3 {
+    font-size: 35px;
+    line-height: 45px;
+  }
+}
+
+@media (max-width: 410px) {
+
+  .title-main h3,
+  .title-main span {
+    font-size: 30px;
+    line-height: 40px;
+  }
 }
 
 .title-main span {

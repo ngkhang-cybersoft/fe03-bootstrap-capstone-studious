@@ -51,15 +51,17 @@
       >
         <!-- Top Header: Info -->
         <div class="top__header--info">
-          <ul class="d-flex align-content-center">
+          <ul class="d-flex align-content-center m-0 p-0">
             <li>
-              <a href="#" class="text-decoration-none">Have any question ?</a>
+              <a href="#" class="text-decoration-none d-inline-block"
+                >Have any question ?</a
+              >
             </li>
-            <li>
+            <li class="d-flex align-items-center">
               <i class="fa fa-phone"></i>
               <a href="#" class="text-decoration-none"> +1(21) 234 4567 </a>
             </li>
-            <li>
+            <li class="d-flex align-items-center">
               <i class="fa fa-envelope"></i>
               <a href="#" class="text-decoration-none">mail@example.com</a>
             </li>
@@ -67,39 +69,44 @@
         </div>
         <!-- Top header: Socail -->
         <div class="top__header--social">
-          <ul class="d-flex align-content-center">
+          <ul class="d-flex align-content-center m-0 p-0">
             <li>
               <a
                 href="https://facebook.com/w3layouts"
-                class="text-decoration-none"
-                ><i class="fab fa-facebook-f"></i
+                class="text-decoration-none d-inline-block"
+              >
+                <i class="fab fa-facebook-f"></i
               ></a>
             </li>
             <li>
               <a
                 href="https://twitter.com/w3layouts"
-                class="text-decoration-none"
-                ><i class="fab fa-twitter"></i
+                class="text-decoration-none d-inline-block"
+              >
+                <i class="fab fa-twitter"></i
               ></a>
             </li>
             <li>
               <a
                 href="https://instagram.com/w3layouts"
-                class="text-decoration-none"
-                ><i class="fab fa-instagram"></i
+                class="text-decoration-none d-inline-block"
+              >
+                <i class="fab fa-instagram"></i
               ></a>
             </li>
             <li class="mr-0">
               <a
                 href="https://linkedin.com/w3layouts"
-                class="text-decoration-none"
-                ><i class="fab fa-linkedin-in"></i
+                class="text-decoration-none d-inline-block"
+              >
+                <i class="fab fa-linkedin-in"></i
               ></a>
             </li>
           </ul>
         </div>
       </div>
     </section>
+
     <!-- ---------- Header ---------- -->
     <header id="header" class="align-items-center w-100 p-0 sticky-top">
       <div class="container-fluid">
@@ -110,7 +117,7 @@
             href="#"
           >
             <figure class="mb-0 mr-1">
-              <img src="./images/logo.png" alt="studious brand" />
+              <img src="./images/logo.png" alt="studious brand" class="w-100" />
             </figure>
             Studious
           </a>
@@ -135,7 +142,7 @@
             class="collapse navbar-collapse justify-content-end"
             id="navbarNavDropdown"
           >
-            <ul class="navbar-nav my-2 my-lg-0 text-center">
+            <ul class="navbar-nav my-lg-0 text-center">
               <li class="nav-item active">
                 <a class="nav-link d-inline-block" href="#">home</a>
               </li>
@@ -154,7 +161,7 @@
                 >
                   pages
                 </a>
-                <ul class="dropdown-menu">
+                <ul class="dropdown-menu text-center">
                   <li>
                     <a class="dropdown-item text-uppercase" href="#"
                       >blog posts</a
@@ -186,7 +193,7 @@
             <div class="navbar-nav align-items-center header__form">
               <form class="d-flex align-items-center position-relative">
                 <input
-                  class="form-control"
+                  class="form-control w-100 bg-transparent"
                   type="search"
                   placeholder="Enter Keyword"
                   aria-label="Search"
@@ -213,6 +220,7 @@
         </nav>
       </div>
     </header>
+
     <!-- ---------- Banner Slide ---------- -->
     <section class="banner">
       <div class="banner__list owl-carousel owl-theme">
@@ -252,6 +260,7 @@
         </div>
       </div>
     </section>
+
     <!-- ---------- Feature ---------- -->
     <section class="feature position-relative">
       <div class="container">
@@ -297,15 +306,19 @@
         </div>
       </div>
     </section>
+
     <!-- ---------- Service ---------- -->
     <section class="service__main py-5">
       <div class="service__inner py-md-5 py-4 container">
+        <!-- Service: Title -->
         <div class="title-main mx-auto mb-5 pb-sm-4">
           <h3>
             Welcome to
             <span>Studious</span>
           </h3>
         </div>
+
+        <!-- Service: List Item -->
         <div class="service__list row text-center justify-content-center">
           <div class="service__item col-lg-4 col-sm-6 mb-sm-0 mb-5">
             <div
@@ -325,12 +338,13 @@
               </p>
             </div>
           </div>
+
           <div class="service__item col-lg-4 col-sm-6 mb-sm-0 mb-5">
             <div
               class="service__icon d-flex justify-content-center align-items-center mb-4"
             >
               <span class="rounded-circle">
-                <i class="fa fa-graduation-cap"></i>
+                <i class="fa fa-users"></i>
               </span>
             </div>
             <div class="service__content">
@@ -343,12 +357,13 @@
               </p>
             </div>
           </div>
+
           <div class="service__item col-lg-4 col-sm-6">
             <div
               class="service__icon d-flex justify-content-center align-items-center mb-4"
             >
               <span class="rounded-circle">
-                <i class="fa fa-graduation-cap"></i>
+                <i class="fa fa-book"></i>
               </span>
             </div>
             <div class="service__content">
@@ -376,7 +391,9 @@
                 <div class="col-md-6">
                   <div class="d-flex align-items-center cover_feature">
                     <div class="icon">
-                      <i class="fa fa-american-sign-language-interpreting"></i>
+                      <i
+                        class="rounded-circle text-center fa fa-american-sign-language-interpreting"
+                      ></i>
                     </div>
                     <div class="icon_info">
                       <h5>Flexible Classes</h5>
@@ -387,7 +404,7 @@
                 <div class="col-md-6 mt-md-0 mt-4">
                   <div class="d-flex align-items-center cover_feature">
                     <div class="icon">
-                      <i class="fa fa-download"></i>
+                      <i class="rounded-circle text-center fa fa-download"></i>
                     </div>
                     <div class="icon_info">
                       <h5>Offline Mode</h5>
@@ -398,7 +415,9 @@
                 <div class="col-md-6 mt-4 pt-md-2">
                   <div class="d-flex align-items-center cover_feature">
                     <div class="icon">
-                      <i class="fa fa-headphones"></i>
+                      <i
+                        class="rounded-circle text-center fa fa-headphones"
+                      ></i>
                     </div>
                     <div class="icon_info">
                       <h5>Educator Help</h5>
@@ -409,7 +428,9 @@
                 <div class="col-md-6 mt-4 pt-md-2">
                   <div class="d-flex align-items-center cover_feature">
                     <div class="icon">
-                      <i class="fa fa-play-circle"></i>
+                      <i
+                        class="rounded-circle text-center fa fa-play-circle"
+                      ></i>
                     </div>
                     <div class="icon_info">
                       <h5>Online Classes</h5>
@@ -423,19 +444,23 @@
         </div>
       </div>
     </section>
+
     <!-- ---------- Stats ---------- -->
-    <section class="stats py-5">
-      <div class="container py-5">
-        <div class="stats_tittle text-center mx-auto mb-5">
+    <section class="stats py-sm-5 pt-sm-0 pt-5">
+      <div class="container pt-md-5 pt-4">
+        <!-- Stats: Title -->
+        <div class="title-main mx-auto mb-5 pb-sm-4">
           <h3>
             Strength in
             <span>Numbers</span>
           </h3>
-          <p class="mt-4">
+          <p class="mt-4 pt-md-2">
             Similique sunt in culpa qui officia deserunt mollitia animi, id est
             laborum et dolorum fuga.
           </p>
         </div>
+
+        <!-- Stats: Dynamic Number -->
         <div class="stats_number">
           <div class="row text-center justify-content-center">
             <div class="col-lg-3 col-sm-6">
@@ -470,24 +495,29 @@
     <!-- ---------- Testimonials ---------- -->
     <section class="student_feedback">
       <div class="testimonials py-5">
-        <div class="container py-4 py-md-5">
-          <div class="feedback_title text-center mx-auto mb-5 pb-lg-5">
+        <div class="container py-md-5 py-4">
+          <!-- Testimonials: Title -->
+          <div class="title-main mx-auto mb-5 pb-lg-5">
             <h3>
               Student Community
               <span>Feedback</span>
             </h3>
           </div>
+
+          <!-- Testimonials: List Item -->
           <div class="row justify-content-center">
             <div class="col-lg-4 col-md-6">
               <div class="testimonials_grid">
                 <span><i class="fa fa-quote-left"></i></span>
                 <p>
-                  Nam libero tempore, cum soluta nobis est eligendi optio cumque
-                  nihil impedit.
+                  <q>
+                    Nam libero tempore, cum soluta nobis est eligendi optio
+                    cumque nihil impedit.
+                  </q>
                 </p>
                 <div class="testi_content">
                   <div class="testi_img">
-                    <img src="./images/testi2.jpg" alt="" />
+                    <img src="./images/testi2.jpg" alt="" class="img-fluid" />
                   </div>
                   <div class="testi_right text-left">
                     <h5>Petey Cruis</h5>
@@ -500,12 +530,14 @@
               <div class="testimonials_grid">
                 <span><i class="fa fa-quote-left"></i></span>
                 <p>
-                  Nam libero tempore, cum soluta nobis est eligendi optio cumque
-                  nihil impedit.
+                  <q>
+                    Nam libero tempore, cum soluta nobis est eligendi optio
+                    cumque nihil impedit.
+                  </q>
                 </p>
                 <div class="testi_content">
                   <div class="testi_img">
-                    <img src="./images/testi1.jpg" alt="" />
+                    <img src="./images/testi1.jpg" alt="" class="img-fluid" />
                   </div>
                   <div class="testi_right text-left">
                     <h5>Molive Joe</h5>
@@ -518,12 +550,14 @@
               <div class="testimonials_grid">
                 <span><i class="fa fa-quote-left"></i></span>
                 <p>
-                  Nam libero tempore, cum soluta nobis est eligendi optio cumque
-                  nihil impedit.
+                  <q>
+                    Nam libero tempore, cum soluta nobis est eligendi optio
+                    cumque nihil impedit.
+                  </q>
                 </p>
                 <div class="testi_content">
                   <div class="testi_img">
-                    <img src="./images/testi3.jpg" alt="" />
+                    <img src="./images/testi3.jpg" alt="" class="img-fluid" />
                   </div>
                   <div class="testi_right text-left">
                     <h5>Paige Turner</h5>
@@ -536,15 +570,19 @@
         </div>
       </div>
     </section>
+
     <!-- ---------- Team ---------- -->
     <section class="team py-5">
       <div class="container py-4">
-        <div class="team_title text-center mx-auto mb-5">
+        <!-- Team: Title -->
+        <div class="title-main mx-auto mb-5 pb-sm-4">
           <h3>
             World Class
             <span>Instructors</span>
           </h3>
         </div>
+
+        <!-- Team: List item -->
         <div class="row text-center justify-content-center">
           <div class="col-lg-3 col-sm-6">
             <div class="team_items">
