@@ -101,9 +101,9 @@
       </div>
     </section>
     <!-- ---------- Header ---------- -->
-    <header id="header" class="d-flex align-items-center p-0 sticky-top">
+    <header id="header" class="align-items-center w-100 p-0 sticky-top">
       <div class="container-fluid">
-        <nav class="navbar navbar-expand-lg">
+        <nav class="navbar navbar-expand-lg justify-content-between">
           <!-- Header: Brand -->
           <a
             class="navbar-brand m-0 p-0 d-flex align-items-center text-capitalize"
@@ -117,30 +117,34 @@
 
           <!-- Header: Bugger Toggle -->
           <button
-            class="navbar-toggler"
+            class="navbar-toggler p-0 m-0 border-0 text-center"
             type="button"
             data-toggle="collapse"
-            data-target="#navbarScroll"
-            aria-controls="navbarScroll"
+            data-target="#navbarNavDropdown"
+            aria-controls="navbarNavDropdown"
             aria-expanded="false"
             aria-label="Toggle navigation"
+            onclick="handleBtnCollapse()"
           >
+            <input id="isCollapse" value="" type="checkbox" hidden />
             <span class="navbar-toggler-icon fa icon-expand fa-bars"></span>
           </button>
 
           <!-- Header: Nav Collapse -->
           <div
             class="collapse navbar-collapse justify-content-end"
-            id="navbarScroll"
+            id="navbarNavDropdown"
           >
-            <ul class="navbar-nav my-2 my-lg-0 navbar-nav-scroll">
+            <ul class="navbar-nav my-2 my-lg-0 text-center">
               <li class="nav-item active">
-                <a class="nav-link text-uppercase" href="#">home</a>
+                <a class="nav-link d-inline-block" href="#">home</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link text-uppercase" href="#">about us</a>
+                <a class="nav-link d-inline-block" href="#">about us</a>
               </li>
-              <li class="nav-item dropdown">
+              <li
+                class="nav-item d-flex flex-column align-items-center dropdown"
+              >
                 <a
                   class="nav-link dropdown-toggle text-uppercase"
                   href="#"
@@ -174,12 +178,12 @@
                 </ul>
               </li>
               <li class="nav-item">
-                <a class="nav-link text-uppercase">contact</a>
+                <a class="nav-link d-inline-block">contact</a>
               </li>
             </ul>
 
             <!-- Header: Search Form -->
-            <div class="header__form">
+            <div class="navbar-nav align-items-center header__form">
               <form class="d-flex align-items-center position-relative">
                 <input
                   class="form-control"

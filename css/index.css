@@ -43,19 +43,42 @@
 header {
     background-color: transparent;
     transition: all 0.4s ease 0s;
-    height: 90px;
+    /* height: 90px; */
 }
 
-header.nav-fixed {
-    border-bottom: none;
-    z-index: 999 !important;
+@media only screen and (max-width: 991px) {
+    header.sticky-top {
+        position: fixed;
+    }
+}
+
+header.nav-fixed>div {
     background-color: var(--bg-color);
     box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.05);
-    height: 70px;
+    border-bottom: none;
+    /* height: 70px; */
+}
+
+header a {
+    color: var(--heading-color);
+    font-weight: 600;
+    text-transform: uppercase;
 }
 
 header .navbar {
     padding: 1.2rem 1rem;
+    box-shadow: none;
+    border-radius: 0px;
+}
+
+header.nav-fixed nav.navbar {
+    padding: 0.5rem 1rem;
+}
+
+@media only screen and (max-width: 991px) {
+    header .navbar {
+        padding: 0.5rem 0rem;
+    }
 }
 
 header .navbar .navbar-brand {
@@ -65,34 +88,57 @@ header .navbar .navbar-brand {
 }
 
 @media only screen and (max-width: 380px) {
-    .navbar .navbar-brand {
+    header .navbar .navbar-brand {
         font-size: 24px;
     }
 }
 
 @media only screen and (max-width: 480px) {
-    .navbar .navbar-brand {
+    header .navbar .navbar-brand {
         font-size: 28px;
     }
 }
 
-header a {
-    color: var(--heading-color);
-    font-weight: 600;
-    text-transform: uppercase;
+@media only screen and (max-width: 991px) {
+    .navbar-nav {
+        padding: 20px;
+        margin-top: 16px;
+        box-shadow: 0 6px 19px rgba(0, 0, 0, 0.05);
+        background: var(--bg-color);
+    }
 }
 
 @media only screen and (max-width: 1080px) {
-    .navbar-expand-lg .navbar-nav .nav-link {
+    header .navbar .navbar-nav .nav-link {
         padding: 6px 6px;
         font-size: 14px;
     }
 }
 
 @media (min-width: 992px) {
-    .navbar-expand-lg .navbar-nav .nav-link {
+    header .navbar .navbar-nav .nav-link {
         padding-right: 0.5rem;
         padding-left: 0.5rem;
+    }
+}
+
+@media only screen and (max-width: 991px) {
+    header .navbar .navbar-nav .nav-link {
+        padding: 2px 10px;
+        font-size: 15px;
+    }
+}
+
+@media only screen and (max-width: 991px) {
+    header .navbar .navbar-toggler .navbar-toggler-icon {
+        font-size: 20px;
+        color: #fff;
+        background: var(--primary-color);
+        width: 34px;
+        height: 34px;
+        height: 34px;
+        line-height: 34px;
+        border-radius: 4px;
     }
 }
 
@@ -100,14 +146,22 @@ header .nav-item.active a,
 header .nav-link:hover,
 header a.dropdown-item:hover {
     color: var(--secondary-color);
-    background: none
+    background: none;
 }
 
-header a.dropdown-item {
-    font-size: 16px;
-    color: var(--heading-color);
-    padding: 5px 24px;
-    font-weight: 600;
+@media only screen and (max-width: 991px) {
+
+    header .nav-item.active a,
+    header .nav-link:hover,
+    header a.dropdown-item:hover {
+        color: var(--primary-color);
+    }
+}
+
+@media only screen and (max-width: 991px) {
+    header .navbar-nav .nav-item {
+        padding: 8px 0;
+    }
 }
 
 header .dropdown-menu {
@@ -115,6 +169,13 @@ header .dropdown-menu {
     background: var(--bg-color);
     border: 1px solid var(--border-color);
     box-shadow: rgb(12 12 12 / 6%) 0px 1px 20px 0px;
+}
+
+@media only screen and (max-width: 991px) {
+    header .dropdown-menu {
+        transform: translateX(0px);
+        border: 1px solid var(--border-color-light);
+    }
 }
 
 header .dropdown-menu::before {
@@ -133,7 +194,23 @@ header .dropdown-menu::before {
     z-index: 1001;
 }
 
-header .header__form {
+header a.dropdown-item {
+    font-size: 16px;
+    color: var(--heading-color);
+    padding: 5px 24px;
+    font-weight: 600;
+}
+
+@media only screen and (max-width: 991px) {
+    header .header__form {
+        border: 1px solid var(--border-color);
+        padding: 20px;
+        margin-top: 16px;
+        box-shadow: 0 6px 19px rgba(0, 0, 0, 0.05);
+    }
+}
+
+header .header__form form {
     margin: 0 10px 0 10px;
 }
 
@@ -157,10 +234,15 @@ header .header__form input:focus {
 header .header__form button {
     right: 0;
     padding: 0 20px 0 0;
+    color: var(--primary-color);
+}
+
+header .header__form button:hover {
+    color: var(--secondary-color);
 }
 
 @media only screen and (max-width: 991px) {
-    .header__darkmode {
+    header .header__darkmode {
         position: absolute;
         right: 50px;
         top: 22px;

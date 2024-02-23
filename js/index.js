@@ -38,6 +38,20 @@ function switchTheme() {
   iconDarkmodeID.classList.add(newTheme.Icon);
 }
 
+/* ---------- Handle button collapse ---------- */
+function handleBtnCollapse() {
+  let iconTheme = document.querySelector("span.navbar-toggler-icon");
+
+  let isCollapseId = document.getElementById('isCollapse');
+
+  let newVal = isCollapseId.value === '' ? "show" : "";
+
+  document.documentElement.style.overflowY = newVal === 'show' ? 'hidden' : '';
+
+  iconTheme.setAttribute('class', `navbar-toggler-icon ${newVal === 'show' ? "fa icon-close fa-times" : "fa icon-expand fa-bars"}`)
+  isCollapseId.value = newVal;
+}
+
 /* ---------- Handle header when scroll ---------- */
 window.addEventListener('scroll', () => {
   let topHeaderId = document.getElementById("top-header");
