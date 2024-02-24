@@ -55,15 +55,12 @@
 
 - Linkview: [Capstone Bootstrap Studious](https://ngkhang.github.io/bc65-capstone-bootstrap-studious/)
 - Youtube: [Youtube: BC65 - Studious](https://youtu.be/vojF1m9ShL4)
-- Github: [nGithub: BC65 - Studious](https://github.com/ngkhang/bc65-capstone-bootstrap-studious)
+- Github: [Github: BC65 - Studious](https://github.com/ngkhang/bc65-capstone-bootstrap-studious)
 - Link Google Drive (Backup): [Google Drive: BC65 - Studious](https://drive.google.com/drive/folders/1GXxauHD12aexsofYO5jDUxd9Ze5P_vDe?usp=sharing)
 
 ---
 
 ## Folder Structure
-
-<details>
-<summary>The code for the project is organized as follows:</summary>
 
 - Structure project:
   
@@ -76,8 +73,6 @@
   ├── index.html
   └── README.md
   ```
-
-</details>
 
 ---
 
